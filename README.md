@@ -9,15 +9,6 @@
 $ yarn add @hatchly/adonis-icons
 ```
 
-Add the module to your nuxt config:
-
-```js
-modules: [
-    // Other modules
-    '@hatchly/adonis-icons',
-],
-```
-
 ## Usage
 
 Once the module is installed it will register and boot a route, complete with controller, to allow a Hatchly instance to get the keys for all icons used within the project.
