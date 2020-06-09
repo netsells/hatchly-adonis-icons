@@ -8,17 +8,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/netsells/nuxt-hatchly-icons.git"
+        "url": "git+https://github.com/netsells/hatchly-adonis-icons.git"
     },
     "author": "Becca Anderton",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/netsells/nuxt-hatchly-icons/issues"
+        "url": "https://github.com/netsells/hatchly-adonis-icons/issues"
     },
-    "homepage": "https://github.com/netsells/nuxt-hatchly-icons#readme",
-    "dependencies": {
-        "axios": "^0.19.2"
-    },
+    "homepage": "https://github.com/netsells/hatchly-adonis-icons#readme",
     "files": [
         "adonis/**/*"
     ]

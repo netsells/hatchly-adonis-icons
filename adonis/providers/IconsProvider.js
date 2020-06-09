@@ -20,7 +20,7 @@ class IconsProvider extends ServiceProvider {
     boot() {
         const Route = use('Adonis/Src/Route');
 
-        Route.get('icons', '@provider:HatchlyIcons/IconsController.getIcons');
+        Route.get('api/icons', '@provider:HatchlyIcons/IconsController.getIcons');
     }
 }
 
