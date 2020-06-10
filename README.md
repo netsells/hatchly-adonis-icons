@@ -2,38 +2,33 @@
 
 > Adonis integration for Hatchly to obtain icons from Nuxt instance
 
+This module will register a route, complete with controller, to allow a Hatchly instance to get the keys for all icons used within the project via an endpoint available at `/api/icons`.
+
+Doing this allows your API to select from available icons in your frontend application without having to maintain two lists of icons across frontend and backend.
 
 ## Installation
 
+Install using the adonis cli to bootstrap the installation.
+
 ```sh
-$ yarn add @hatchly/adonis-icons
+$ npx @adonisjs/cli install @hatchly/adonis-icons --yarn
 ```
 
 ## Usage
 
-Once the module is installed it will register and boot a route, complete with controller, to allow a Hatchly instance to get the keys for all icons used within the project.
-
-### PHP
-
-This works in tandem with the Hatchly IconAttribute package found here - @todo 
-
-#### Usage
-
-Add the module to your applications service providers in `start/app.js`:
+Make sure to register the provider inside `start/app.js` file.
 
 ```js
 const providers = [
     // Other providers
-    '@hatchly/adonis-icons/adonis/providers/IconProvider',
+    '@hatchly/adonis-icons/adonis/providers/IconsProvider',
 ];
 ```
 
-Add an `icons.js` to your config directory to set the svg sprite path.
+### PHP
 
-```
-const path = require('path');
+This works in tandem with the Hatchly `RemoteIcon` Attribute package found here - @todo 
 
-module.exports = {
-    path: path.resolve(__dirname, '../resources/assets/icons/sprite-file-name.svg');
-};
-```
+## Config
+
+The config file is saved as `config/hatchly/icons.js`. Make sure to update the `path` value to the **full path to the icons svg spritesheet**. 

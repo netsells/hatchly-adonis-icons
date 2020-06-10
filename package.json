@@ -17,6 +17,9 @@
     },
     "homepage": "https://github.com/netsells/hatchly-adonis-icons#readme",
     "files": [
-        "adonis/**/*"
+        "adonis/**/*",
+        "stubs/**/*",
+        "instructions.js",
+        "instructions.md"
     ]
 }
