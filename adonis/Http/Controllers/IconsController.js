@@ -10,7 +10,7 @@ class IconsController {
      * @param {object} response
      */
     getIcons({ response }) {
-        const svgSprite = fs.readFileSync(Config.get('icons.path'), 'utf8');
+        const svgSprite = fs.readFileSync(Config.get('hatchly.icons.path'), 'utf8');
         const icons = svgSprite.match(/(id="[A-z-0-9]+")/g).map((svg) => {
             return svg.replace('id="', '')
                 .replace('"', '')
